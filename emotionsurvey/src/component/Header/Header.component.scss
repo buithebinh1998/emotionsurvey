@@ -1,0 +1,38 @@
+.sc-header{
+    background-color: #2f3f54;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #ebecf1;
+    z-index: 10;
+
+    .sc-item{
+        height: 4rem;
+    }
+    .sc-logo{
+        padding: 1.25rem;
+        img{
+            max-height: 3.875rem;
+            position: relative;
+            bottom: 1rem;
+        }
+    }
+    .sc-logout{
+        text-transform: uppercase;
+        padding: 1.25rem;
+        color: #ffffff;
+        font-weight: 500;
+        &:hover{
+            color: red;
+            cursor: pointer;
+        }
+    }
+}

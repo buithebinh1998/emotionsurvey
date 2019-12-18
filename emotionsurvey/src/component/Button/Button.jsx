@@ -1,7 +1,7 @@
-import React from 'react';
-import './Button.component.scss';
-import PropTypes from 'prop-types';
-
+import React from "react";
+import "./Button.component.scss";
+import PropTypes from "prop-types";
+import C from '../../constants/constants'
 // #region styled-components
 
 // #endregion
@@ -16,24 +16,28 @@ import PropTypes from 'prop-types';
 
 // #region component
 const propTypes = {
-    clicked : PropTypes.func
+  clicked: PropTypes.func,
+  title: PropTypes.string
 };
 
-
 const defaultProps = {
-    clicked : fn()
+  clicked: () => {},
+  title:  C.EMPTY_STRING
 };
 
 /**
- * 
+ *
  */
-const Button = (props) => {
-    return(
-        <div className="container">
-            <a href="/" className="button" onClick = {props.clicked}></a>
-        </div>
-    );
-}
+const Button = props => {
+  const { clicked, title } = props;
+  return (
+    <>
+      <a href="/" className="button" onClick={clicked}>
+        {title}
+      </a>
+    </>
+  );
+};
 
 Button.propTypes = propTypes;
 Button.defaultProps = defaultProps;

@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  flex-flow: column;
+  height: 86vh;
+}
+.introduce-container {
+  .content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fcfcfc;
+    width: 100%;
+    max-width: 560px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    min-height: 100%;
+    text-align: left;
+    .content-title {
+      font-size: 2rem;
+      letter-spacing: -0.5px;
+      line-height: 2.5rem;
+      color: #393b45;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      padding-bottom: 1em;
+    }
+    .content-description {
+      font-family: Open Sans Regular, OpenSans-Regular, Open Sans, sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0;
+      line-height: 1.5rem;
+      ul {
+        font-size: 1em;
+        padding: 1em;
+      }
+    }
+  }
+}
+.welcome-container {
+  background-image: url("./assets/img/welcome.jpg");
+  background-size: cover;
+  background-position: center center;
+  h1 {
+    font-size: 1.5rem;
+    color: crimson;
+  }
+}

@@ -1,0 +1,81 @@
+.textquestion{
+    h5{
+        font-size: 16px;
+    }
+    input[type=text]{
+        &:focus{
+            border: 1px solid #13c1ca;
+        }
+    }
+    .textinput{
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        font-size: 1em;
+        line-height: 2em;
+        padding-left: 1em;
+        height: calc(2em + 1px);
+        
+    }
+    .textinput:focus + .focus-input100-1::before {
+  -webkit-animation: full-w 0.2s linear 0s;
+  animation: full-w 0.2s linear 0s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+.textinput:focus + .focus-input100-1::after {
+  -webkit-animation: full-h 0.1s linear 0.2s;
+  animation: full-h 0.1s linear 0.2s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+.textinput:focus + .focus-input100-1 + .focus-input100-2::before {
+  -webkit-animation: full-w 0.2s linear 0.3s;
+  animation: full-w 0.2s linear 0.3s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+.textinput:focus + .focus-input100-1 + .focus-input100-2::after {
+  -webkit-animation: full-h 0.1s linear 0.5s;
+  animation: full-h 0.1s linear 0.5s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+    .invalid{
+        color:red;
+    
+    }
+    margin-bottom: 2rem;
+}
+
+.wrap-input100 {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+  }
+  
+  .wrap-input100.rs1 {
+    border-top: none;
+  }
+  
+  .input100 {
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-family: OpenSans-Regular;
+    font-size: 15px;
+    color: #666666;
+    line-height: 1.2;
+  }
+  
+  /*---------------------------------------------*/
+  input.input100 {
+    height: 68px;
+    padding: 0 25px 0 25px;
+  }
+  
