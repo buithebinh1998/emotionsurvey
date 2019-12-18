@@ -1,7 +1,8 @@
-import React from 'react';
+import React from "react";
 import "./TextInput.component.scss";
-import PropTypes from 'prop-types';
-
+import PropTypes from "prop-types";
+import { Field } from "formik";
+import C from "../../constants/constants";
 // #region styled-components
 
 // #endregion
@@ -15,60 +16,46 @@ import PropTypes from 'prop-types';
 // #endregion
 
 // #region component
-const propTypes = {};
+const propTypes = {
+  name: PropTypes.string,
+  value: PropTypes.string,
+  errors: PropTypes.string,
+  title: PropTypes.string
+};
 
-const defaultProps = {};
+const defaultProps = {
+  name: C.EMPTY_STRING,
+  value: C.EMPTY_STRING,
+  errors: C.EMPTY_STRING,
+  title: C.EMPTY_STRING
+};
 
 /**
- * 
+ *
  */
-const TextInput = () => {
-    const {
-        name,
-        type,
-        onValueChange,
-        errors,
-        onHandleBlur,
-        onHandleFocus,
-        value,
-      } = props;
-    const handleChange = e => {
-        onValueChange(e.target.value);
-    }
-    const handleBlur = props => {
-        onHandleBlur();
-    }
-    return (
+const TextInput = (props) => {
+  const { name, errors, value,title} = props;
+  return (
     <div className="textquestion">
-        <h5>
-          <span className="title">{props.title}</span>
-        </h5>
-        <div className="wrap-input100 rs1 validate-input">
-          <input
-            type={type}
-            className="textinput"
-            value={value}
-            name={name}
-            onChange={handleChange}
-            onBlur={handleBlur}
-            onFocus={handleFocus}
-          />
-          {errors ? (
-            <div className="alert-validate" data-validate={errors}></div>
-          ) : (
-            ""
-          )}
-          <span className="focus-input100-1" />
-          <span className="focus-input100-2" />
-        </div>
+      <h5>
+        <span className="title">{title}</span>
+      </h5>
+      <div className="wrap-input100 rs1 validate-input">
+        <Field type="text" className="textinput" value={value} name={name} />
+        {errors ? (
+          <div className="alert-validate" data-validate={errors}></div>
+        ) : (
+          ""
+        )}
+        <span className="focus-input100-1" />
+        <span className="focus-input100-2" />
       </div>
-    )
-}
+    </div>
+  );
+};
 
 TextInput.propTypes = propTypes;
 TextInput.defaultProps = defaultProps;
 // #endregion
 
 export default TextInput;
-
-

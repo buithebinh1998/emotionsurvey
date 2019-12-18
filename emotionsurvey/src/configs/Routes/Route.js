@@ -15,5 +15,11 @@ export const routers = [
       import("../../container/IntroducePage")
     )
   },
-  
+  {
+    exact: true,
+    path: "/thongtincanhan",
+    container: React.lazy(() =>
+      import("../../container/AboutYouPage")
+    )
+  },
 ];
