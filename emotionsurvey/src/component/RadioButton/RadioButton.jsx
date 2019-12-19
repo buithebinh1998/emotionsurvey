@@ -39,7 +39,7 @@ const RadioButton = props => {
   const renderList = listData.map((data, idx) => {
     return (
       <div className="inputGroup" key={generatedKey(data.id) + idx}>
-        <Field id={data.id} name={name} type="radio" />
+        <Field id={data.id} name={name} type="radio" value = {data.value}/>
         <label htmlFor={data.id}>{data.value}</label>
       </div>
     );

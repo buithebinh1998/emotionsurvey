@@ -6,35 +6,51 @@ import C from "../constants/constants";
 import D from "../constants/dictionary";
 import TextInput from "../component/TextInput/TextInput";
 import RadioButton from "../component/RadioButton/RadioButton";
+import ButtonSubmit from '../component/ButtonSubmit/ButtonSubmit';
 export class AboutYouPage extends Component {
   static propTypes = {
-    prop: PropTypes
+    values: PropTypes.object,
+    errors: PropTypes.object,
+    handleSubmit: PropTypes.func
   };
 
   render() {
-    const {
-      values,
-      errors,
-      handleChange,
-      handleBlur,
-      handleSubmit
-    } = this.props;
+    const { values, errors, handleSubmit } = this.props;
     return (
-      <div className="container2 form">
-        <form onSubmit={handleSubmit}>
-          <TextInput
-            name="yourname"
-            value={values.yourname}
-            errors={errors.yourname}
-            title={D.emotion.aboutYou.yourname.question}
-          />
-          <RadioButton
-            listData={D.emotion.aboutYou.yourgender.answer}
-            name="yourgender"
-            title={D.emotion.aboutYou.yourgender.question}
-          />
-        </form>
-      </div>
+      <>
+        <h2 className="titleAboutYou">Thông tin cá nhân</h2>
+        <div className="container2 form">
+          <form onSubmit={handleSubmit}>
+            <TextInput
+              name="yourname"
+              value={values.yourname}
+              errors={errors.yourname}
+              title={D.emotion.aboutYou.yourname.question}
+            />
+            <RadioButton
+              listData={D.emotion.aboutYou.yourgender.answer}
+              name="yourgender"
+              title={D.emotion.aboutYou.yourgender.question}
+            />
+            <RadioButton
+              listData={D.emotion.aboutYou.yourage.answer}
+              name="yourage"
+              title={D.emotion.aboutYou.yourage.question}
+            />
+            <RadioButton
+              listData={D.emotion.aboutYou.yourqualification.answer}
+              name="yourqualification"
+              title={D.emotion.aboutYou.yourqualification.question}
+            />
+            <RadioButton
+              listData={D.emotion.aboutYou.yourjob.answer}
+              name="yourjob"
+              title={D.emotion.aboutYou.yourjob.question}
+            />
+            <ButtonSubmit title = {C.SURVEY.CONTINUE} />
+          </form>
+        </div>
+      </>
     );
   }
 }
@@ -43,6 +59,7 @@ const EnhancedForm = withFormik({
   enableReinitialize: true,
   mapPropsToValues: () => ({
     yourname: C.EMPTY_STRING,
+    yourgender: C.EMPTY_STRING,
     yourage: C.EMPTY_STRING,
     yourqualification: C.EMPTY_STRING,
     yourjob: C.EMPTY_STRING
@@ -55,13 +72,13 @@ const EnhancedForm = withFormik({
       resetForm();
     }, 500);
   },
-  validate: values => {
-    const errors = {};
-    if (!values.gender) {
-      errors.gender = "Gender is required";
-    }
-    return errors;
-  }
+//   validate: values => {
+//     const errors = {};
+//     if (!values.gender) {
+//       errors.gender = "Gender is required";
+//     }
+//     return errors;
+//   }
 });
 const mapStateToProps = state => ({});
 

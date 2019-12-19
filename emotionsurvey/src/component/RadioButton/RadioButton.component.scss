@@ -1,7 +1,7 @@
 .inputGroup {
     background-color: #fff;
     display: block;
-    margin: 10px 0;
+    margin: 2em 0;
     position: relative;
 
     label {
@@ -83,8 +83,16 @@
 // codepen formatting
 .form {
   padding: 0 2rem;
-  max-width: 550px;
+  max-width: 60vw;
   font-size: 1em;
   font-weight: 600;
   line-height: 36px;
+  position: relative;
+}
+
+@media (min-width: 1200px){
+  .form {
+   left: 20%;
+   top: 100px;
+  }
 }
