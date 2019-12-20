@@ -20,14 +20,14 @@ const propTypes = {
   listData: PropTypes.array,
   name: PropTypes.string,
   title: PropTypes.string,
-  errors: PropTypes.string
+  errors: PropTypes.object
 };
 
 const defaultProps = {
   listData: [],
   name: C.EMPTY_STRING,
   title: C.EMPTY_STRING,
-  errors: C.EMPTY_STRING
+  errors: C.EMPTY_OBJECT
 };
 
 /**

@@ -18,37 +18,36 @@ export class Part4Page extends Component {
   render() {
     const { errors, handleSubmit } = this.props;
     return (
-    <>
-    <h2 className="titleAboutYou">{D.emotion.survey.title}</h2>
-      <div className="container2 form">
-        <form onSubmit={handleSubmit}>
-          <Image />
-          <RadioButton
-            listData={D.emotion.survey.part4.question1.answer}
-            name="part4Question1"
-            title = {D.emotion.survey.answer}
-            errors = {errors}
-          />
-            <Image />
-          <RadioButton
-            listData={D.emotion.survey.part4.question2.answer}
-            name="part4Question2"
-            title = {D.emotion.survey.answer}
-            errors = {errors}
-          />
-            <Image />
-          <RadioButton
-            listData={D.emotion.survey.part4.question3.answer}
-            name="part4Question3"
-            title = {D.emotion.survey.answer}
-            errors = {errors}
-          />
-          <ButtonSubmit title = {C.SURVEY.CONTINUE}/>
-        </form>
-      </div>
+      <>
+        <h2 className="titleAboutYou">{D.emotion.survey.title}</h2>
+        <div className="container2 form">
+          <form onSubmit={handleSubmit}>
+            <Image imgLink={D.emotion.survey.part4.question1.imgLink} />
+            <RadioButton
+              listData={D.emotion.survey.part4.question1.answer}
+              name="part4Question1"
+              title={D.emotion.survey.answer}
+              errors={errors}
+            />
+            <Image imgLink={D.emotion.survey.part4.question2.imgLink} />
+            <RadioButton
+              listData={D.emotion.survey.part4.question2.answer}
+              name="part4Question2"
+              title={D.emotion.survey.answer}
+              errors={errors}
+            />
+            <Image imgLink={D.emotion.survey.part4.question3.imgLink} />
+            <RadioButton
+              listData={D.emotion.survey.part4.question3.answer}
+              name="part4Question3"
+              title={D.emotion.survey.answer}
+              errors={errors}
+            />
+            <ButtonSubmit title={C.SURVEY.CONTINUE} />
+          </form>
+        </div>
       </>
     );
-   
   }
 }
 
@@ -65,9 +64,9 @@ const mapDispatchToProps = dispatch => {
   };
 };
 const formSchema = Yup.object().shape({
-  part4Question1: Yup.string().required(""),
-  part4Question2: Yup.string().required(""),
-  part4Question3: Yup.string().required("")
+  part4Question1: Yup.string().required(C.EMOTION_REQUIRED),
+  part4Question2: Yup.string().required(C.EMOTION_REQUIRED),
+  part4Question3: Yup.string().required(C.EMOTION_REQUIRED)
 });
 const EnhancedForm = withFormik({
   enableReinitialize: true,
@@ -78,10 +77,17 @@ const EnhancedForm = withFormik({
   }),
   validationSchema: formSchema,
   handleSubmit: (values, { props, setSubmitting, resetForm }) => {
-    const { history, onUpdatepart4 } = props;
+    const { history, onUpdatePart4 } = props;
+    let part4 = {
+      question1: values.part4Question1,
+      question2: values.part4Question2,
+      question3: values.part4Question3
+    };
+    let data = {
+      part4
+    };
     setTimeout(() => {
-      alert(JSON.stringify(values, null, 2));
-      onUpdatepart4(values, history);
+      onUpdatePart4(data, history);
       setSubmitting(false);
       resetForm();
     }, 500);

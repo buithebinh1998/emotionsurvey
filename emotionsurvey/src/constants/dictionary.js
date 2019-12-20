@@ -112,6 +112,7 @@ export default {
       question: "Hãy cho tôi biết cảm xúc của bức ảnh mà bạn nhìn thấy?",
       part1: {
         question1: {
+          imgLink: "1hvx6EAQeX665MNq5TOhxwE5DKlDAVE4X",
           answer: [
             {
               id: "AngryPart1Question1",
@@ -144,6 +145,7 @@ export default {
           ]
         },
         question2: {
+          imgLink: "13JDgh4x5f43xbEFgvML8CFoNKEzshnh4",
           answer: [
             {
               id: "AngryPart1Question2",
@@ -176,6 +178,7 @@ export default {
           ]
         },
         question3: {
+          imgLink: "1-wICqlneIlKCqiJAkFe9k-ONETcu7RjV",
           answer: [
             {
               id: "AngryPart1Question3",
@@ -210,6 +213,7 @@ export default {
       },
       part2: {
         question1: {
+          imgLink: "1PhCmwAhWaxlWrOEa4cyw731N-93KqWGf",
           answer: [
             {
               id: "AngryPart2Question1",
@@ -242,6 +246,7 @@ export default {
           ]
         },
         question2: {
+          imgLink: "1sCInJnpRXo1wCvuBlGLgzIajMyz5eSad",
           answer: [
             {
               id: "AngryPart2Question2",
@@ -274,6 +279,7 @@ export default {
           ]
         },
         question3: {
+          imgLink: "19eyfcN2hRgrLkcHxBSQ0DIIbi-qm6NmJ",
           answer: [
             {
               id: "AngryPart2Question3",
@@ -308,6 +314,7 @@ export default {
       },
       part3: {
         question1: {
+          imgLink: "1Wp3diduGhrx4BGkMcUjfEWJNm_oomTyn",
           answer: [
             {
               id: "AngryPart3Question1",
@@ -340,6 +347,7 @@ export default {
           ]
         },
         question2: {
+          imgLink: "1b2hNVdSLK523XYTSVs9H8c2r1NVlouym",
           answer: [
             {
               id: "AngryPart3Question2",
@@ -372,6 +380,7 @@ export default {
           ]
         },
         question3: {
+          imgLink: "1o2WujI4gczOFZosjBtK3WNjfIE9LgWZg",
           answer: [
             {
               id: "AngryPart3Question3",
@@ -406,6 +415,7 @@ export default {
       },
       part4: {
         question1: {
+          imgLink: "1SfITycRGmaeTR_2DMv3CFwCOYQ95YHmB",
           answer: [
             {
               id: "AngryPart4Question1",
@@ -438,6 +448,7 @@ export default {
           ]
         },
         question2: {
+          imgLink: "1N4PEBhY2AUgIZ2W5V-ngvVq3wirIHS6m",
           answer: [
             {
               id: "AngryPart4Question2",
@@ -470,6 +481,7 @@ export default {
           ]
         },
         question3: {
+          imgLink: "1ZuMnvnJim7iUdJ_QqNI88Ghmr47cxUkW",
           answer: [
             {
               id: "AngryPart4Question3",
@@ -504,6 +516,7 @@ export default {
       },
       part5: {
         question1: {
+          imgLink: "14AxNhaAHLTEbSjAYbIbcVS7nzKbN1Wry",
           answer: [
             {
               id: "AngryPart5Question1",
@@ -536,6 +549,7 @@ export default {
           ]
         },
         question2: {
+          imgLink: "1Fxr2D9J00xEaIQy8moavrzgDgRv3liYQ",
           answer: [
             {
               id: "AngryPart5Question2",
@@ -568,6 +582,7 @@ export default {
           ]
         },
         question3: {
+          imgLink: "1sYT9-je6upoyZ8GTMm4yeOXZdkEuzo0V",
           answer: [
             {
               id: "AngryPart5Question3",
@@ -602,6 +617,7 @@ export default {
       },
       part6: {
         question1: {
+          imgLink: "1tZFob0_vnvBfh2vO3-i_SQ7l9TQ_A_l0",
           answer: [
             {
               id: "AngryPart6Question1",
@@ -634,6 +650,7 @@ export default {
           ]
         },
         question2: {
+          imgLink: "1MNa4xRan3S_UPDzcWkYVJ42UWTMvD9OZ",
           answer: [
             {
               id: "AngryPart6Question2",
@@ -666,6 +683,7 @@ export default {
           ]
         },
         question3: {
+          imgLink: "13Y5irHNRuhT34JPqBSNCz2TiCyEOin-2",
           answer: [
             {
               id: "AngryPart6Question3",
@@ -700,6 +718,7 @@ export default {
       },
       part7: {
         question1: {
+          imgLink: "15eItrpD_FQ3RlctqqjtCuord4bWkETES",
           answer: [
             {
               id: "AngryPart7Question1",
@@ -732,6 +751,7 @@ export default {
           ]
         },
         question2: {
+          imgLink: "1QqbNalOvdMMI6_VdvKzY6PFeKX9j8drt",
           answer: [
             {
               id: "AngryPart7Question2",
@@ -764,6 +784,7 @@ export default {
           ]
         },
         question3: {
+          imgLink: "1SNMlViZ5l-4u8yQEkF_QqhsTVFLkKU5v",
           answer: [
             {
               id: "AngryPart7Question3",

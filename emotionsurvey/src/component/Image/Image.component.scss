@@ -1,0 +1,9 @@
+.content-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .image {
+        width: 50%;
+    }
+}

@@ -18,6 +18,7 @@ export default {
   INVALID_EMAIL: "Email bạn nhập không đúng",
   TOO_SHORT: "Quá ngắn",
   TOO_LONG: "Quá dài",
+  EMOTION_REQUIRED: "Yêu cầu bạn chọn cảm xúc",
   EMAIL_REQUIRED: "Yêu cầu bạn nhập Email",
   NAME_REQUIRED: "Yệu cầu nhập tên của bạn",
   AGE_REQUIRED: "Yêu cầu chọn khoảng tuổi của bạn",
