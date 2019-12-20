@@ -17,22 +17,24 @@ import C from '../../constants/constants'
 // #region component
 const propTypes = {
   clicked: PropTypes.func,
-  title: PropTypes.string
+  title: PropTypes.string,
+  disabled: PropTypes.bool
 };
 
 const defaultProps = {
   clicked: () => {},
-  title:  C.EMPTY_STRING
+  title:  C.EMPTY_STRING,
+  disabled: false
 };
 
 /**
  *
  */
 const Button = props => {
-  const { clicked, title } = props;
+  const { clicked, title, disabled } = props;
   return (
     <>
-      <a href="/" className="button" onClick={clicked}>
+      <a href="/" className={`button ${disabled ? "disabled" : C.EMPTY_STRING}`} onClick={clicked}>
         {title}
       </a>
     </>

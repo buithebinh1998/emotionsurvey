@@ -1,13 +1,9 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import Button from "../component/Button/Button";
 import D from "../constants/dictionary";
 export class WelcomePage extends Component {
-  static propTypes = {
-    prop: PropTypes
-  };
   onHandleClick = e => {
     const { history } = this.props;
     e.preventDefault();

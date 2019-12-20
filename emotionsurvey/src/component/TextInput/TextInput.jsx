@@ -35,6 +35,7 @@ const defaultProps = {
  */
 const TextInput = (props) => {
   const { name, errors, value,title} = props;
+  console.log(errors  );
   return (
     <div className="textquestion">
       <h5>

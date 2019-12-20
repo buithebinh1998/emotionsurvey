@@ -19,34 +19,39 @@ import C from "../../constants/constants";
 const propTypes = {
   listData: PropTypes.array,
   name: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
+  errors: PropTypes.string
 };
 
 const defaultProps = {
   listData: [],
   name: C.EMPTY_STRING,
-  title: C.EMPTY_STRING
+  title: C.EMPTY_STRING,
+  errors: C.EMPTY_STRING
 };
 
 /**
  *
  */
 const RadioButton = props => {
-  const { listData, name, title } = props;
+  const { listData, name, title, errors } = props;
   const generatedKey = key => {
     return key;
   };
   const renderList = listData.map((data, idx) => {
     return (
       <div className="inputGroup" key={generatedKey(data.id) + idx}>
-        <Field id={data.id} name={name} type="radio" value = {data.value}/>
+        <Field id={data.id} name={name} type="radio" value={data.value} />
         <label htmlFor={data.id}>{data.value}</label>
       </div>
     );
   });
   return (
     <div>
+      <div className="title-radio">
       <h5>{title}</h5>
+    {errors[name] ?  <span className="invalid">{errors[name]}</span> : C.EMPTY_STRING } 
+      </div>
       {renderList}
     </div>
   );

@@ -14,8 +14,11 @@ export default {
       yourname: {
         question: "1. Tên của bạn là: "
       },
+      youremail: {
+        question: "2. Email của bạn là:"
+      },
       yourgender: {
-        question: "2. Giới tính của bạn là:",
+        question: "3. Giới tính của bạn là:",
         answer: [
           {
             id: "genderMale",
@@ -32,7 +35,7 @@ export default {
         ]
       },
       yourage: {
-        question: "3. Bạn nằm trong khoảng tuổi nào?",
+        question: "4. Bạn nằm trong khoảng tuổi nào?",
         answer: [
           {
             id: "Under18",
@@ -49,7 +52,7 @@ export default {
         ]
       },
       yourqualification: {
-        question: "4. Trình độ học vấn của bạn là",
+        question: "5. Trình độ học vấn của bạn là",
         answer: [
           {
             id: "Cap3",
@@ -82,7 +85,7 @@ export default {
         ]
       },
       yourjob: {
-        question: "5. Nghề nghiêp hiện tại của bạn là ",
+        question: "6. Nghề nghiêp hiện tại của bạn là ",
         answer: [
           {
             id: "HocSinh",
@@ -104,6 +107,7 @@ export default {
       }
     },
     survey: {
+      answer: "Cảm xúc của bạn là: ",
       title: "THÔNG TIN KHẢO SÁT NHẬN DIỆN CẢM XÚC",
       question: "Hãy cho tôi biết cảm xúc của bức ảnh mà bạn nhìn thấy?",
       part1: {

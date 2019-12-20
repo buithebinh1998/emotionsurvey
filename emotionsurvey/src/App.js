@@ -2,11 +2,11 @@ import React, { Suspense } from "react";
 import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { routers } from "./configs/Routes/Route";
 import { Provider } from "react-redux";
-import Store, { persistor } from "./configs/Store/Store";
-import { PersistGate } from "redux-persist/integration/react";
+import Store from "./configs/Store/Store";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Layout from "./hoc/Layout";
 import history from "./configs/History/History";
+import "./fonts/font-awesome-4.7.0/css/font-awesome.min.css";
 import "./App.scss";
 require("dotenv").config();
 
@@ -31,7 +31,6 @@ const renderRouteContainer = routes =>
 function App() {
   return (
     <Provider store={Store}>
-      <PersistGate loading={null} persistor={persistor}>
         <Router history={history}>
           <Route
             render={({ location }) => (
@@ -51,7 +50,6 @@ function App() {
             )}
           />
         </Router>
-      </PersistGate>
     </Provider>
   );
 }
