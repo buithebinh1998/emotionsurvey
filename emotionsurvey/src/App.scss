@@ -45,6 +45,15 @@
   background-position: center center;
   h1 {
     font-size: 1.5rem;
+    text-transform: uppercase;
     color: crimson;
+  }
+  
+}
+@media (min-width: 1200px) {
+  .welcome-container{
+    h1{
+      font-size: 32px;
+    }
   }
 }

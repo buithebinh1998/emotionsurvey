@@ -1,5 +1,5 @@
 import * as actionTypes from "./actionType";
-import { EvaluationAPI as API } from "../service/Evaluation.service";
+import { EmotionAPI as API } from "../service/Emotion.service";
 import { GetToken } from "../util/GetToken";
 export const surveyStart = () => {
   return {

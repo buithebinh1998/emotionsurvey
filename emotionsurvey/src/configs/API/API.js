@@ -1,5 +1,5 @@
 const envConfig = {
-    evaluationAPI: process.env.REACT_APP_EVALUATION_API_URL
+    emotionAPI: process.env.REACT_APP_EMOTION_URL
 }
 
 export default envConfig

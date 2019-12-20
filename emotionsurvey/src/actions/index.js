@@ -40,3 +40,7 @@ export {
   resetSurvey,
   createSurvey
 } from "./survey.action";
+
+export {
+  createSurvey 
+} from "./emotion.action";
