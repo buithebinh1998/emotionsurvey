@@ -6,6 +6,12 @@
   flex-flow: column;
   height: 86vh;
 }
+.container2 { 
+  justify-content: center;
+  h5 {
+    font-size: 1.25em;
+  }
+}
 .introduce-container {
   .content {
     display: flex;
@@ -45,15 +51,20 @@
   background-position: center center;
   h1 {
     font-size: 1.5rem;
-    text-transform: uppercase;
-    color: crimson;
+    color: rgb(220, 20, 60);
   }
   
 }
-@media (min-width: 1200px) {
-  .welcome-container{
-    h1{
-      font-size: 32px;
-    }
+.titleAboutYou {
+  color: rgb(220, 20, 60);
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  top:10%;
+}
+@media (min-width: 1200px){
+  .titleAboutYou{
+    top: 50px;
   }
 }
