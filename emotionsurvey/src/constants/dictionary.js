@@ -109,7 +109,7 @@ export default {
     survey: {
       answer: "Cảm xúc của bạn là: ",
       title: "THÔNG TIN KHẢO SÁT NHẬN DIỆN CẢM XÚC",
-      question: "Hãy cho tôi biết cảm xúc của bức ảnh mà bạn nhìn thấy?",
+      question: "Theo bạn, cảm xúc của người trong hình là gì?",
       part1: {
         question1: {
           imgLink: "1hvx6EAQeX665MNq5TOhxwE5DKlDAVE4X",
